@@ -3,7 +3,7 @@ package datadog
 import (
 	"context"
 	"fmt"
-	"log"
+	log "github.com/sourcegraph-ce/logrus"
 	"reflect"
 	"strconv"
 	"strings"

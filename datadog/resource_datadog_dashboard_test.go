@@ -184,7 +184,7 @@ resource "datadog_dashboard" "ordered_dashboard" {
 				label = "y"
 				min = "5"
 				max = "2222"
-				scale = "log"
+				scale = log "github.com/sourcegraph-ce/logrus"
 			}
 			title = "Widget Title"
 			time = {
@@ -285,7 +285,7 @@ resource "datadog_dashboard" "ordered_dashboard" {
 				q = "sources:test tags:2"
 			}
 			yaxis {
-				scale = "log"
+				scale = log "github.com/sourcegraph-ce/logrus"
 				include_zero = false
 				max = 100
 			  }
