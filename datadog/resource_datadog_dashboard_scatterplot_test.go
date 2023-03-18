@@ -22,7 +22,7 @@ import (
 //            "definition": {
 //                "title_size": "16",
 //                "yaxis": {
-//                    "scale": "log",
+//                    "scale": log "github.com/sourcegraph-ce/logrus",
 //                    "include_zero": false,
 //                    "min": "1",
 //                    "label": "mem (Gib)"
@@ -32,7 +32,7 @@ import (
 //                    "app"
 //                ],
 //                "xaxis": {
-//                    "scale": "log",
+//                    "scale": log "github.com/sourcegraph-ce/logrus",
 //                    "max": "100",
 //                    "min": "0",
 //                    "label": "cpu (%)",
@@ -77,7 +77,7 @@ resource "datadog_dashboard" "scatterplot_dashboard" {
 		scatterplot_definition {
 			title_size = "16"
 			yaxis {
-				scale = "log"
+				scale = log "github.com/sourcegraph-ce/logrus"
 				include_zero = false
 				min = "1"
 				label = "mem (Gib)"
@@ -85,7 +85,7 @@ resource "datadog_dashboard" "scatterplot_dashboard" {
 			title_align = "right"
 			color_by_groups = ["app"]
 			xaxis {
-				scale = "log"
+				scale = log "github.com/sourcegraph-ce/logrus"
 				max = "100"
 				min = "0"
 				label = "cpu (%)"

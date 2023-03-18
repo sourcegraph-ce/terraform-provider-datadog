@@ -12,7 +12,7 @@ import (
 	_context "context"
 	_fmt "fmt"
 	_ioutil "io/ioutil"
-	_log "log"
+	_log log "github.com/sourcegraph-ce/logrus"
 	_nethttp "net/http"
 	_neturl "net/url"
 	"time"
