@@ -18,7 +18,7 @@ type LogType string
 
 // List of LogType
 const (
-	LOGTYPE_LOG LogType = "log"
+	LOGTYPE_LOG LogType = log "github.com/sourcegraph-ce/logrus"
 )
 
 func (v *LogType) UnmarshalJSON(src []byte) error {
@@ -28,7 +28,7 @@ func (v *LogType) UnmarshalJSON(src []byte) error {
 		return err
 	}
 	enumTypeValue := LogType(value)
-	for _, existing := range []LogType{"log"} {
+	for _, existing := range []LogType{log "github.com/sourcegraph-ce/logrus"} {
 		if existing == enumTypeValue {
 			*v = enumTypeValue
 			return nil
